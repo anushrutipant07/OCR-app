@@ -33,21 +33,23 @@ if(loading || !data)return <>Loading...</>
           color: 'white',
           background: 'black',
           borderRadius: '10px',
+          position: 'fixed',
+          paddingInline: '30px',
           padding: '10px'
         }} onClick={() => setUpdateId(null)}>Back to records</button>
         <div style={{textAlign: 'center'}}>
     <div style={{textAlign: 'center'}}>
                 "identification_number": <input type="text" value={data.identification_number} onChange={(e) =>{let nd = {...data};
                 nd.identification_number = e.target.value; setData(nd)}}/> </div>
-                <div style={{textAlign: 'center'}}>    "name": <input type="text" value={data.name} onChange={(e) =>{let nd = {...data};
+                <div style={{textAlign: 'center', marginLeft: '106px'}}>    "name": <input type="text" value={data.name} onChange={(e) =>{let nd = {...data};
                 nd.name = e.target.value; setData(nd)}}/></div>
-                <div style={{textAlign: 'center'}}> "last_name": <input type="text" value={data.last_name} onChange={(e) =>{let nd = {...data};
+                <div style={{textAlign: 'center', marginLeft: '75px'}}> "last_name": <input type="text" value={data.last_name} onChange={(e) =>{let nd = {...data};
                 nd.last_name = e.target.value; setData(nd)}}/></div>
-                <div style={{textAlign: 'center'}}>  "date-of-birth": <input type="text" value={data.date_of_birth} onChange={(e) =>{let nd = {...data};
+                <div style={{textAlign: 'center', marginLeft: '60px'}}>  "date-of-birth": <input type="text" value={data.date_of_birth} onChange={(e) =>{let nd = {...data};
                 nd.date_of_birth = e.target.value; setData(nd)}}/></div>
-                <div style={{textAlign: 'center'}}>  "date-of-issue": <input type="text" value={data.date_of_issue} onChange={(e) =>{let nd = {...data};
+                <div style={{textAlign: 'center', marginLeft: '58px'}}>  "date-of-issue": <input type="text" value={data.date_of_issue} onChange={(e) =>{let nd = {...data};
                 nd.date_of_issue = e.target.value; setData(nd)}}/></div>
-                <div style={{textAlign: 'center'}}>  "date-of-expiry": <input type="text" value={data.date_of_expiry} onChange={(e) =>{let nd = {...data};
+                <div style={{textAlign: 'center',marginLeft: '50px'}}>  "date-of-expiry": <input type="text" value={data.date_of_expiry} onChange={(e) =>{let nd = {...data};
                 nd.date_of_expiry = e.target.value; setData(nd)}}/></div>
                 </div>
                 
