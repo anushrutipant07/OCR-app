@@ -10,7 +10,7 @@ const List = () => {
   const [loading, setLoading] = useState(false);
   const fetch = () => {
     setLoading(true);
-    axios.get("https://thai-id-ocr-2t0v.onrender.com/api/card/cards").then((res) => {
+    axios.get("https://ocr-pgac.onrender.com/api/card/cards").then((res) => {
       setLoading(false);
       setData(res.data);
     });
@@ -35,7 +35,7 @@ const List = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete(`https://thai-id-ocr-2t0v.onrender.com/api/card/cards/${id}`).then(() => fetch());
+    axios.delete(`https://ocr-pgac.onrender.com/api/card/cards/${id}`).then(() => fetch());
   };
 
   console.log(data);

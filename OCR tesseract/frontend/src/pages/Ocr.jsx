@@ -17,7 +17,7 @@ const Ocr = () => {
     formData.append("files", file);
     console.log(formData)
     
-    const res = await axios.post("https://thai-id-ocr-2t0v.onrender.com/api/upload", formData);
+    const res = await axios.post("https://ocr-pgac.onrender.com/api/upload", formData);
     console.log("axios",res)
     setResponse(res.data);
   }
