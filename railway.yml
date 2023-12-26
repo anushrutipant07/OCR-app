@@ -1,0 +1,7 @@
+#railway
+services:
+  - name: frontend
+    port: 3000
+    
+    installCommand: cd OCR-app\OCR tesseract\frontend && npm install
+    runCommand: cd OCR-app\OCR tesseract\frontend && npm start
