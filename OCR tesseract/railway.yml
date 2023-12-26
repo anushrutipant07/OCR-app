@@ -1,5 +1,0 @@
-services:
-  - name: frontend
-    port: 3000
-    installCommand: cd frontend && npm install
-    runCommand: cd frontend && npm start
