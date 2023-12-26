@@ -1,5 +1,5 @@
 services:
-  - name: backend
+  - name: frontend
     port: 3000
-    installCommand: cd OCR tesseract\backend && npm install
-    runCommand: cd OCR tesseract\backend && npm start
+    installCommand: cd OCR tesseract\frontend && npm install
+    runCommand: cd OCR tesseract\frontend && npm start
