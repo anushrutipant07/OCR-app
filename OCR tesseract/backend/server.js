@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const app = express();
 const fs = require('fs');
 const fileUpload = require("express-fileupload")
-
+const cors=require("cors");
 const Card = require("./models/card.js");
 const cardRoute = require("./routes/card");
 const bodyParser = require('body-parser');
@@ -58,7 +58,7 @@ const extractImageObj = (obj) => {
     };
 }
 
-
+app.use(cors());
 app.use(fileUpload());
 
 app.use(bodyParser.urlencoded({ extended: false }))
