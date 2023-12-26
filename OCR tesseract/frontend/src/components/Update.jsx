@@ -7,7 +7,7 @@ const Update = ({id, setUpdateId}) => {
 
   const fetch = () => {
     setLoading(true);
-    axios.get(`https://ocr-2shm.onrender.com/api/card/cards/${id}`).then((res) => {setLoading(false);setData(res.data)})
+    axios.get(`https://thai-id-zb9r.onrender.com/api/card/cards/${id}`).then((res) => {setLoading(false);setData(res.data)})
 }
 React.useEffect(() => {
     fetch();
@@ -18,7 +18,7 @@ const handleSubmit = () => {
     headers: { 'Content-Type': 'application/json' },
 }
 console.log("update",data)
-  axios.post(`https://ocr-2shm.onrender.com/api/card/cards/${id}`,data,config).then(() => setUpdateId(null));
+  axios.post(`https://thai-id-zb9r.onrender.com/api/card/cards/${id}`,data,config).then(() => setUpdateId(null));
 }
 // for updating the information of the ID card
 if(loading || !data)return <>Loading...</>
